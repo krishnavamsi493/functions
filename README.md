@@ -178,9 +178,13 @@ o/p:
 enter a word:ismav
 reverse the word is vamsi
 ------------------------------------------------------------------------------------
-
-
-
+def sumnum(*args):
+    print(args[4])
+    return sum(args)
+print(sumnum(1,2,3,4,5,6,7,8,9,10))
+o/p:
+5
+55
 
 
 
