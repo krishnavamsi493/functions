@@ -11,7 +11,7 @@ OUTPUT:
       Enter the money:4000
       total amount: 7000
 ---------------------------------------------------------------
-  ef value():
+  def value():
     return 3.14159
 result=value()
 print("value in the function is",result)
@@ -168,3 +168,21 @@ OUTPUT:
 enter the number 2
 sum of first2 numbers is 3
 ------------------------------------------------------------------------------------
+def sum(n):
+    if n==0:
+        return 0
+    return n+sum(n-1)
+num=int(input("enter the number"))
+print(f"sum of first {num} numbers is {sum(num)}")
+o/p:
+enter a word:ismav
+reverse the word is vamsi
+------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
