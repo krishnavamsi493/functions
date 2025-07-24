@@ -229,6 +229,36 @@ o/p:
     enter a number: 8
 8 is even
 ____________________________________________________________________________________________________
-        
+  def fib(n):
+    if n<=1:
+        return n
+    return fib(n-1)+fib(n-2)
+terms=int(input("enter number of terms to print: "))
+print(("fibonacci series....."))
+for i in range(terms):
+      print(fib(i),end=' ')      
+o/p:enter number of terms to print:  5
+fibonacci series.....
+0 1 1 2 3
+________________________________________________________________________________________________________
+def permute(s,bucket=''):
+    if not s:
+        print(bucket)
+        return
+    for i in range(len(s)):
+        ns=s[:i]+s[i+1:]
+        permute(ns,bucket+s[i])
+text=input("enter a name/word:")
+print("possibilities of combinations...")
+permute(text)
+o/p:enter a name/word: abc
+possibilities of combinations...
+abc
+acb
+bac
+bca
+cab
+cba
+______________________________________________________________________________________________________________
 
 
