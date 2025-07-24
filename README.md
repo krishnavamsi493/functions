@@ -294,5 +294,22 @@ o/p:Enter a number: 5
 2
 1
 _________________________________________________________________________________________________________________
+def sumhead(n):
+    if n==0:
+        return 0
+    return n+sumhead(n-1)
+num=int(input("enter a number:"))
+print("sum:",sumhead(num))
 
+def sumtail(n,temp=0):
+    if n==0:
+        return temp
+    return sumtail(n-1,temp+n)
+num=int(input("enter a number:"))
+print("Sum:",sumtail(num))
+o/p:enter a number: 5
+sum: 15
+enter a number: 4
+Sum: 10
+_________________________________________________________________________________________________________________
   
