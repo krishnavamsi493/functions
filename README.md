@@ -260,5 +260,25 @@ bca
 cab
 cba
 ______________________________________________________________________________________________________________
+def binary(n,b=' '):
+    if n==0:
+        print(b)
+        return
+    binary(n-1,b+'0')
+    binary(n-1,b+'1')
+length=int(input("Enter length of string:"))
+print("Binary combinations....")
+binary(length)
+o/p:Enter length of string: 3
+Binary combinations....
+ 000
+ 001
+ 010
+ 011
+ 100
+ 101
+ 110
+ 111
+_________________________________________________________________________________________________________________
 
 
